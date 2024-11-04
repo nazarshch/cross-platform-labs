@@ -13,7 +13,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         LinkedList<Student> students = new LinkedList<Student>();
         students.add(new Student("Anne", 23, 4000));
         students.add(new Student("John", 49, 2500));
