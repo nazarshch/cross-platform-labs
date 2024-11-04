@@ -38,12 +38,13 @@ public class Student implements Serializable {
         this.accomodationFee = accomodationFee;
     }
 
+    private final int STANDARD_ACCOMODATION_FEE = 4000;
     // конвертація в мапу з умовою для плати проживання
     public Map<String, Object> toYamlMap() {
         Map<String, Object> map = new HashMap<>();
         map.put("fullName", fullName);
         // номер кімнати не серіалізується за умовою завдання
-        if (accomodationFee >= 4000) {
+        if (!(accomodationFee < STANDARD_ACCOMODATION_FEE)) {
             map.put("accomodationFee", accomodationFee);
         }
         return map;
