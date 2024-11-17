@@ -1,0 +1,18 @@
+.table-view .column-header {
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-padding: 15px; /* Відступи для заголовків */
+    -fx-text-fill: #000000; /* Чорний колір тексту заголовків */
+    -fx-font-weight: bold; /* Жирний текст для заголовків */
+    -fx-font-size: 15px;
+    -fx-background-color: lightgreen;
+}
+
+.table-cell {
+    -fx-background-color: #E4E0E1;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-padding: 15px; /* Відступи для кожної клітинки */
+    -fx-text-fill: #000000; /* Чорний текст в клітинках */
+    -fx-font-size: 15px;
+}
